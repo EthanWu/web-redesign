@@ -731,28 +731,7 @@ ul.grid {
     list-style : none;
 }
 
-@media only screen and (max-width:767px) {
-ul.grid {
-    margin-left : 0;
-    margin-right : 0;
-    margin-bottom : 10px;
-}
-}
-@media only screen and (min-width:768px) and (max-width:1139px) {
-    ul.grid {
-        width : 748px;
-    }
-}
-@media only screen and (max-width:767px) {
-        ul.grid {
-        width : 300px;
-    }
-}
-@media only screen and (min-width:480px) and (max-width:767px) {
-    ul.grid {
-    width : 480px;
-    }
-}
+
 
 ul.grid li {
     float : left;
@@ -771,24 +750,25 @@ ul.grid li {
     height : 265px;
     overflow : hidden;
 }
-@media only screen and (max-width:767px) {
+@media(max-width:767px) {
 ul.grid {
 margin-left : 0;
 margin-right : 0;
 margin-bottom : 10px;
 }
 }
-@media only screen and (min-width:768px) and (max-width:1139px) {
-ul.grid {
-width : 748px;
+
+@media(max-width:1180px) {
+        ul.grid {
+        width : 980px;
+    }
 }
-}
-@media only screen and (max-width:767px) {
+@media(max-width:767px) {
 ul.grid {
 width : 300px;
 }
 }
-@media only screen and (min-width:480px) and (max-width:767px) {
+@media(min-width:480px) and (max-width:767px) {
 ul.grid {
 width : 480px;
 }
@@ -806,17 +786,17 @@ margin-right : 0;
 ul.grid li:hover .item-thumbnail img.thumbnail {
 bottom : 263px;
 }
-@media only screen and (min-width:768px) and (max-width:1139px) {
+@media(min-width:768px) and (max-width:1139px) {
 ul.grid li:hover .item-thumbnail img.thumbnail {
 bottom : 362px;
 }
 }
-@media only screen and (max-width:767px) {
+@media(max-width:767px) {
 ul.grid li:hover .item-thumbnail img.thumbnail {
 bottom : 478px;
 }
 }
-@media only screen and (max-width:479px) {
+@media(max-width:479px) {
 ul.grid li:hover .item-thumbnail img.thumbnail {
 bottom : 298px;
 }
@@ -828,7 +808,7 @@ ul.grid li:hover .item-info-container {
 transition : opacity 0.2s 0.2s;
 opacity : 1;
 }
-@media only screen and (min-width:768px) and (max-width:1139px) {
+@media(min-width:768px) and (max-width:1139px) {
 ul.grid li {
 float : left;
 display : inline;
@@ -844,34 +824,34 @@ ul.grid li:nth-child(2n 2) {
 margin-right : 0;
 }
 }
-@media only screen and (min-width:768px) and (max-width:1139px) and (max-width:767px) {
+@media(min-width:768px) and (max-width:1139px) and (max-width:767px) {
 ul.grid li {
 margin-left : 0;
 margin-right : 0;
 margin-bottom : 10px;
 }
 }
-@media only screen and (min-width:768px) and (max-width:1139px) and (min-width:768px) and (max-width:1139px) {
+@media(min-width:768px) and (max-width:1139px) and (min-width:768px) and (max-width:1139px) {
 ul.grid li {
 width : 364px;
 }
 }
-@media only screen and (min-width:768px) and (max-width:1139px) and (max-width:767px) {
+@media(min-width:768px) and (max-width:1139px) and (max-width:767px) {
 ul.grid li {
 width : 300px;
 }
 }
-@media only screen and (min-width:768px) and (max-width:1139px) and (min-width:480px) and (max-width:767px) {
+@media(min-width:768px) and (max-width:1139px) and (min-width:480px) and (max-width:767px) {
 ul.grid li {
 width : 480px;
 }
 }
-@media only screen and (max-width:767px) {
+@media(max-width:767px) {
 ul.grid li {
 height : 480px;
 }
 }
-@media only screen and (max-width:479px) {
+@media(max-width:479px) {
 ul.grid li {
 height : 300px;
 }
@@ -894,17 +874,17 @@ bottom : 0;
 ul.grid .item-thumbnail img.thumbnail-rollover {
 bottom : -263px;
 }
-@media only screen and (min-width:768px) and (max-width:1139px) {
+@media(min-width:768px) and (max-width:1139px) {
 ul.grid .item-thumbnail img.thumbnail-rollover {
 bottom : -362px;
 }
 }
-@media only screen and (max-width:767px) {
+@media(max-width:767px) {
 ul.grid .item-thumbnail img.thumbnail-rollover {
 bottom : -478px;
 }
 }
-@media only screen and (max-width:479px) {
+@media(max-width:479px) {
 ul.grid .item-thumbnail img.thumbnail-rollover {
 bottom : -298px;
 }
@@ -951,24 +931,24 @@ margin-left : 10px;
 margin-right : 10px;
 width : 1120px;
 }
-@media only screen and (max-width:767px) {
+@media(max-width:767px) {
 ol.grid-controls {
 margin-left : 0;
 margin-right : 0;
 margin-bottom : 10px;
 }
 }
-@media only screen and (min-width:768px) and (max-width:1139px) {
+@media(min-width:768px) and (max-width:1139px) {
 ol.grid-controls {
 width : 748px;
 }
 }
-@media only screen and (max-width:767px) {
+@media(max-width:767px) {
 ol.grid-controls {
 width : 300px;
 }
 }
-@media only screen and (min-width:480px) and (max-width:767px) {
+@media(min-width:480px) and (max-width:767px) {
 ol.grid-controls {
 width : 480px;
 }
