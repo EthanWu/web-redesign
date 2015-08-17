@@ -42,6 +42,17 @@
         }
     })
 
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+
+    $('[data-toggle="popover"]').popover({
+        html: true,
+        trigger: 'hover',
+        placement: 'top',
+        content: function(){return '<img src="'+$(this).data('img') + '" />';}
+    });
+
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
 
