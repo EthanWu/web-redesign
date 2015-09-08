@@ -163,7 +163,7 @@ aside {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 16px;
-        color: #fff;
+        color: #83d3c9;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -173,7 +173,7 @@ aside {
 
     .navbar-default.affix .nav > li > a,
     .navbar-default.affix .nav > li > a:focus {
-        color: #fff;
+        color: #83d3c9;
     }
 
     .navbar-default.affix .nav > li > a:hover,
@@ -188,7 +188,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/member-avatar/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
