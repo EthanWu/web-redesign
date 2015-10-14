@@ -19,15 +19,9 @@ var server = http.createServer(function (request, response) {
         } else {
             fs.readFile(realpath, "binary", function (err, file) {
                 if (err) {
-                    response.writeHead(500, {
-                        'Content-Type': 'text/plain'
-                    });
-
                     response.end(err);
                 } else {
-
                     response.write(file, "binary");
-
                     response.end();
                 }
             });
