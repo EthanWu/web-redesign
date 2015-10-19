@@ -10,6 +10,7 @@
     <meta name="author" content="Ethan Wu">
 
     <title>厦门信弈网络科技有限公司</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 
     <!-- Bootstrap Core CSS -->
     <!--<link rel="stylesheet" href="css/bootstrap.css" type="text/css">-->
@@ -18,49 +19,35 @@
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
     <link rel="stylesheet" type="text/css" href="css/product-page.css"/>
     <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
 
-    <script src="http://ajax.useso.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.useso.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //Navigation
-                menu: '#myMenu',
-                lockAnchors: false,
+
+
                 anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage', 'fifthPage', 'sixthPage'],
-                navigation: true,
-                navigationPosition: 'right',
-                navigationTooltips: ['玩鲜', '给力狂欢', '无限创意', '无需远行', '拒绝无聊', '下载'],
+                css3: true,
+                'navigation': true,
+                'navigationPosition': 'right',
+                navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'forthPage', 'fifthPage', 'sixthPage'],
                 showActiveTooltip: false,
 
-                //Scrolling
-                css3: true,
-                autoScrolling: true,
-                fitToSection: false,
-                fitToSectionDelay: 0,
+                'afterLoad': function (anchorLink, index) {
+                    console.log(anchorLink, index);
+                    if (index == 1 || index == 4) {
+                        $('#about-us').removeClass('grey-surface').addClass('white-surface');
 
-                continuousVertical: false,
-                scrollOverflow: false,
-
-                //Accessibility
-                keyboardScrolling: true,
-                animateAnchor: true,
-
-                //Design
-                controlArrows: true,
-                verticalCentered: true,
-                resize: false,
-                paddingTop: '3em',
-                paddingBottom: '10px',
-                fixedElements: '#header, .footer',
-                //Custom selectors
-                sectionSelector: '.section',
-                fixedElements: '#about-us'
+                    } else {
+                        $('#about-us').removeClass('white-surface').addClass('grey-surface');
+                    }
+                },
             });
         });
     </script>
@@ -68,34 +55,49 @@
 
 <body>
 
-<a id="about-us" href="http://siyee.org">关于我们</a>
+<a id="about-us" href="index.html">关于我们</a>
 
 <div id="fullpage">
-    <div class="section " id="section0">
-        <img class=" animated fadeIn" src="img/product/slogan.png"/>
-        <a class="download-button animated tada">AppStore 下载</a>
-        <img class="ui-img animated bounceInUp" src="img/product/ui_page.png"/>
+    <div class="section section0">
+        <img class="title animated fadeIn" src="img/product/slogan.png"/>
+        <a class="download-button animated tada">iPhone版下载</a>
+        <img class="app animated bounceInUp" src="img/product/ui_page.png"/>
     </div>
     <div class="section section1">
-        <img class="img-center animated fadeIn" src="img/product/pageone_image.png"/>
-        <img class="img-center section1-introduction" src="img/product/pageone_text.png"/>
+        <img class="img-center" src="img/product/pageone_image.png"/>
+
+        <h2 class="orange up">给力狂欢</h2>
+
+        <h3 class="deep-grey">玩趣味任务赢取惊喜厚礼</h3>
     </div>
     <div class="section section2">
         <img class="section2-img" src="img/product/pagetwo_image.png"/>
-        <img class="section2-img" src="img/product/pagetwo_text.png"/>
+
+        <div class="section2-text">
+            <h2 class="orange up">无限创意</h2>
+
+            <h3 class="deep-grey">主题线路体验精彩玩法</h3>
+        </div>
     </div>
     <div class="section section3">
-        <img class="section2-img animated bounceInLeft" src="img/product/pagethree_text.png"/>
-        <img class="section2-img animated bounceInRight" src="img/product/pagethree_image.png"/>
+        <div class="section3-text">
+            <h2 class="white up">无需远行</h2>
+
+            <h3 class="white">优质小铺一触即达享生活</h3>
+        </div>
+        <img class="section2-img " src="img/product/pagethree_image.png"/>
     </div>
     <div class="section section4">
-        <img class="img-center section4-introduction" src="img/product/pagefour_text.png"/>
+        <h2 class="orange up">拒绝无聊</h2>
+
+        <h3 class="deep-grey">任务盒子开启城市游乐场</h3>
         <img class="img-center section4-img" src="img/product/pagefour_image.png"/>
     </div>
     <div class="section section5">
-        <img src="img/product/bg_2.0.png"/>
+        <img class="big-logo" src="img/product/bg_2.0.png"/>
+
         <p class="intro">一键下载，娱乐嗨不停，带你开心带你飞！</p>
-        <a class="download-button fadeIn">AppStore 下载</a>
+        <a class="download-button-2 fadeIn">iPhone版下载</a>
     </div>
 </div>
 
