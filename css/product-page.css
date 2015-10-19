@@ -1,0 +1,104 @@
+
+#section0 {
+    padding: 100px 0;
+    background-image: url("../img/product/bg.png");
+    text-align: center;
+    overflow: hidden;
+}
+
+.section {
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+p.intro {
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #AFB8C1;
+}
+
+img {
+    margin: auto;
+}
+
+img.ui-img {
+    margin: 40px 0 0 0;
+}
+
+img.section1-introduction {
+    margin-top: -6%;
+    width: 30%
+}
+
+img.section1-img {
+    width: 40%
+}
+
+.img-center {
+    display: block;
+}
+
+.section2 {
+    background-color: #F8F8F8;
+}
+
+.section3 {
+    background-color: #FFDB45;
+}
+
+.section2-img {
+    width: 30%;
+    display: inline;
+    margin-left: 10%;
+}
+
+.section5 {
+
+    background-color: #F8F8F8;
+}
+
+img.section4-introduction {
+    width: 30%
+}
+
+img.section4-img {
+    margin-top: 4%;
+    width: 40%
+}
+
+.download-button {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 30px;
+    padding: 8px 12px;
+    margin: 3% auto;
+    width: 18%;
+    font-size: 1.4em;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+    color: #FFDB45;
+
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+    display: block;
+
+    -webkit-box-shadow: 0px 9px 25px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0px 9px 25px rgba(0, 0, 0, .2);
+    box-shadow: 0px 9px 25px rgba(0, 0, 0, .2);
+}
+
+#about-us {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    z-index: 999;
+    text-decoration: none;
+
+    font-family: sans-serif;
+    font-weight: 100;
+    color: #AFB8C1;
+}
