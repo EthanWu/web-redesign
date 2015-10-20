@@ -5,201 +5,102 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="description" content="玩鲜产品页">
+    <meta name="author" content="Ethan Wu">
 
-    <title>厦门信弈网络科技有限公司</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-          rel='stylesheet' type='text/css'>
-    <link href='http://fonts.useso.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-          rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <title>玩鲜</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link href="//cdn.bootcss.com/animate.css/3.4.0/animate.min.css" rel="stylesheet">
+    <link href="//cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="//cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>
+    <script src="//cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
 
+    <!-- Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/product-page.css"/>
+
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                //Navigation
+
+
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage', 'fifthPage', 'sixthPage'],
+                css3: true,
+                'navigation': true,
+                'navigationPosition': 'right',
+
+                'afterLoad': function (anchorLink, index) {
+                    //‘关于我们’按钮的颜色判定
+                    if (index == 1 || index == 4) {
+                        $('#about-us').removeClass('grey-surface').addClass('white-surface');
+
+                    } else {
+                        $('#about-us').removeClass('white-surface').addClass('grey-surface');
+                    }
+
+                    if (index == 6) {
+                        $('.big-logo').addClass('animated rubberBand');
+                    }
+                }
+            });
+        });
+    </script>
 </head>
 
-<body id="page-top">
+<body>
 
+<a id="about-us" href="index.html">关于我们</a>
 
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand " href="#page-top">厦门信弈网络科技</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="index.html">首页</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="product.html">产品</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#us">成员</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">联系我们</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="job.html">加入我们</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+<div id="fullpage">
+    <div class="section section0">
+        <img class="title animated fadeIn" src="img/product/slogan.png"/>
+        <a class="download-button animated tada">iPhone版下载</a>
+        <img class="app animated bounceInUp" src="img/product/ui_page.png"/>
     </div>
-    <!-- /.container-fluid -->
-</nav>
+    <div class="section section1">
+        <img class="img-center section1-img" src="img/product/pageone_image.png"/>
 
-<div class="jumbotron">
-    <div class="container">
-        <div class="col-lg-6 text-left">
-            <h3 style="margin-top: 19%" class="production-intro">最新鲜的</h3>
+        <div class="section1-text">
+            <h2 class="orange up">给力狂欢</h2>
 
-            <h3 class="production-intro">女性旅行应用</h3>
-            <a href="#" style="" class="btn btn-download wow tada">
-                <i class="fa fa-lg fa-apple"></i> iPhone版下载
-            </a>
+            <h3 class="deep-grey">玩趣味任务赢取惊喜厚礼</h3>
         </div>
+    </div>
+    <div class="section section2">
+        <img class="section2-img" src="img/product/pagetwo_image.png"/>
 
-        <div class="col-lg-6  text-left">
-            <img class="show-app-img1" src="./img/product/bg_liulian_phone.png">
+        <div class="section2-text">
+            <h2 class="orange up">无限创意</h2>
+
+            <h3 class="deep-grey">主题线路体验精彩玩法</h3>
         </div>
+    </div>
+    <div class="section section3">
+        <div class="section3-text">
+            <h2 class="white up">无需远行</h2>
 
+            <h3 class="white">优质小铺一触即达享生活</h3>
+        </div>
+        <img class="section2-img" src="img/product/pagethree_image.png"/>
+    </div>
+    <div class="section section4">
+        <h2 class="orange up">拒绝无聊</h2>
+
+        <h3 class="deep-grey">任务盒子开启城市游乐场</h3>
+        <img class="img-center section4-img" src="img/product/pagefour_image.png"/>
+    </div>
+    <div class="section section5">
+        <img class="big-logo" src="img/product/bg_2.0.png"/>
+
+        <p class="intro">一键下载，娱乐嗨不停，带你开心带你飞！</p>
+        <a class="download-button-2 fadeIn">iPhone版下载</a>
     </div>
 </div>
-
-<div class="container border-bottom">
-    <div class="row">
-        <div class="col-md-7 col-sm-12">
-            <h3 class="func-title yellow-bg">旅行清单</h3>
-            <h4>多彩你的旅行</h4>
-
-            <p class="func-intro">覆盖全国景点的超清美图，多种定制主题风格任你选择，完美呈现你的旅行诱惑。</p>
-
-            <h4>从容享受旅途</h4>
-
-            <p class="func-intro">一键优化游玩顺序，景点信息一应俱全，流连在手，天下我有。</p>
-
-            <h4>找到投趣旅伴</h4>
-
-            <p class="func-intro">根据清单相似度，为你推荐同行伙伴，要你的旅途不再孤单。</p>
-        </div>
-        <div class="col-md-5 col-sm-12">
-            <img src="img/product/bg_list.png" class="thumbnail" width="300">
-        </div>
-    </div>
-</div>
-
-<div class="container border-bottom">
-    <div class="row">
-        <div class="col-md-7 col-sm-12">
-            <img src="img/product/bg_place.png" class="thumbnail" width="500">
-        </div>
-
-        <div class="col-md-5 col-sm-12">
-            <h3 class="func-title brick-red-bg">新鲜地</h3>
-            <h4>多彩你的旅行</h4>
-
-            <p class="func-intro">覆盖全国景点的超清美图，多种定制主题风格任你选择，完美呈现你的旅行诱惑。</p>
-
-            <h4>从容享受旅途</h4>
-
-            <p class="func-intro">一键优化游玩顺序，景点信息一应俱全，流连在手，天下我有。</p>
-
-            <h4>找到投趣旅伴</h4>
-
-            <p class="func-intro">根据清单相似度，为你推荐同行伙伴，要你的旅途不再孤单。</p>
-        </div>
-    </div>
-</div>
-
-<div class="container border-bottom">
-    <div class="row">
-        <div class="col-md-7 col-sm-12">
-            <h3 class="func-title blue-bg">途中</h3>
-            <h4>多彩你的旅行</h4>
-
-            <p class="func-intro">覆盖全国景点的超清美图，多种定制主题风格任你选择，完美呈现你的旅行诱惑。</p>
-            <h4>从容享受旅途</h4>
-
-            <p class="func-intro">一键优化游玩顺序，景点信息一应俱全，流连在手，天下我有。</p>
-
-            <h4>找到投趣旅伴</h4>
-
-            <p class="func-intro">根据清单相似度，为你推荐同行伙伴，要你的旅途不再孤单。</p>
-        </div>
-
-        <div class="col-md-5 col-sm-12">
-            <img src="img/product/bg_path.png" class="thumbnail" width="500">
-        </div>
-    </div>
-</div>
-
-<div class="container border-bottom text-center">
-    <div class="row">
-        <img style="margin: 0 auto 4% auto;width:24%" src="img/product/bg_2.0.png" class="thumbnail">
-    </div>
-    <div class="row">
-        <p class="func-intro"><span class="em-blue">「流连2.0」</span>即将上线，为你打造前所未有的贴心服务</p>
-
-        <p class="func-intro">不忘初心，与你同行。通过微博会微信搜索<span class="em-blue">「一起流连」</span>，和流连酥互动，让生活每一刻都充满惊喜。</p>
-    </div>
-</div>
-
-<aside class="bg-dark" style="background: #2b252c;">
-    <div class="container text-center">
-        <ul class="icons">
-            <li><a href="http://www.weibo.com/u/5427812340" class="icon fa-weibo"></a></li>
-            <li><a tabindex="0" class="icon fa-wechat" role="button" data-placement="top" data-toggle="popover"
-                   data-trigger="hover" title="扫描二维码" data-img="img/9c96b513a4509ccc843d9aff1cad8932.jpg"></a></li>
-            <li><a href="#" class="icon fa-qq"></a></li>
-        </ul>
-    </div>
-    <div class="copyright text-center">
-        <p class="func-intro" style="color:#5f5d5f;">&copy; Siyee Network Technology Co.,Ltd. All rights reserved.</p>
-    </div>
-</aside>
-
-
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.fittext.js"></script>
-<script src="js/wow.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="js/creative.js"></script>
 
 </body>
 

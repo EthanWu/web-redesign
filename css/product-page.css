@@ -1,0 +1,177 @@
+
+.section0 {
+    padding: 100px 0;
+    background-image: url("../img/product/bg.png");
+    background-size: 100% 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.section {
+    text-align: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+p.intro {
+    margin-top: 2em;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: #AFB8C1;
+}
+
+h2 {
+    font-size: 4em;
+    font-weight: 500;
+}
+h3 {
+    font-size: 2em;
+    font-weight: 100;
+    z-index: 999;
+}
+.up {
+    margin-top: -1em;
+    margin-bottom: -0.4em;
+}
+.orange{
+    color: #FFDB45;
+}
+
+.deep-grey{
+    color:#AFB8C1;
+}
+
+.white {
+    color: white;
+}
+img {
+    margin: auto;
+}
+
+img.title {
+    width:30%
+}
+img.app {
+    width: 40%;
+}
+
+
+.img-center {
+    display: block;
+}
+
+.section2 {
+    background-color: #F8F8F8;
+}
+
+.section3 {
+    background-color: #FFDB45;
+}
+
+.section2-img {
+    width: 40%;
+    display: inline;
+}
+
+.section2-text {
+    display: inline-block;
+    text-align: left;
+    margin-left: 10%;
+    vertical-align: 600%;
+}
+
+.section3-text {
+    display: inline-block;
+    text-align: right;
+    margin-right: 10%;
+    vertical-align: 15em;
+}
+
+.section5 {
+    background-color: #F8F8F8;
+}
+
+img.section4-introduction {
+    width: 30%
+}
+
+img.section4-img {
+    margin-top: 4%;
+    width: 40%
+}
+
+.download-button {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 30px;
+    padding: 12px 15px;
+    margin: 3% auto;
+    width: 18%;
+    font-size: 1.4em;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+    color: #FFDB45;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+    display: block;
+
+    -webkit-box-shadow: 0px 10px 20px 1px #F5D23E;
+    -moz-box-shadow: 0px 10px 20px 1px #F5D23E;
+    box-shadow: 0px 10px 20px 1px #F5D23E;
+}
+
+.download-button-2 {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 30px;
+    padding: 12px 15px;
+    margin: 3% auto;
+    width: 18%;
+    font-size: 1.4em;
+    white-space: nowrap;
+    background-color: #FFFFFF;
+    font-weight: 500;
+    color: #FFDB45;
+
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    text-transform: none;
+    display: block;
+
+    -webkit-box-shadow: 0px 10px 20px 1px #E9EDEE;
+    -moz-box-shadow: 0px 10px 20px 1px #E9EDEE;
+    box-shadow: 0px 10px 20px 1px #E9EDEE;
+}
+
+.big-logo {
+    width: 15%;
+}
+
+
+
+#about-us {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border-radius: 30px;
+    padding: 0.3em 1.2em;
+    z-index: 999;
+    font-weight: bolder;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.grey-surface {
+    color: #CFD6DE;
+    border: 2px solid #CFD6DE;
+}
+
+.white-surface {
+    border: 2px solid white;
+    color: white;
+}
