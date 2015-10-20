@@ -9,7 +9,7 @@
     <meta name="description" content="玩鲜产品页">
     <meta name="author" content="Ethan Wu">
 
-    <title>厦门信弈网络科技有限公司</title>
+    <title>玩鲜</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 
     <!-- Bootstrap Core CSS -->
@@ -36,8 +36,6 @@
                 css3: true,
                 'navigation': true,
                 'navigationPosition': 'right',
-                navigationTooltips: ['firstPage', 'secondPage', 'thirdPage', 'forthPage', 'fifthPage', 'sixthPage'],
-                showActiveTooltip: false,
 
                 'afterLoad': function (anchorLink, index) {
                     //‘关于我们’按钮的颜色判定
@@ -48,7 +46,7 @@
                         $('#about-us').removeClass('white-surface').addClass('grey-surface');
                     }
 
-                    if(index==6){
+                    if (index == 6) {
                         $('.big-logo').addClass('animated rubberBand');
                     }
                 }
@@ -69,8 +67,10 @@
     </div>
     <div class="section section1">
         <img class="img-center section1-img" src="img/product/pageone_image.png"/>
+
         <div class="section1-text">
             <h2 class="orange up">给力狂欢</h2>
+
             <h3 class="deep-grey">玩趣味任务赢取惊喜厚礼</h3>
         </div>
     </div>
